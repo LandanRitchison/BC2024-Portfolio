@@ -1,4 +1,11 @@
 body {
 background-color: black;
-color: white;
+color: #FBFF00;
 }
+
+
+.buttons {
+ display: flex;
+ flex-direction: column;
+}
+
