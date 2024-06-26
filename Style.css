@@ -1,11 +1,73 @@
+/*changes the background color and text color*/
 body {
 background-color: black;
 color: #FBFF00;
 }
 
+.careerBox {
+    
+    color: black;
 
-.buttons {
- display: flex;
- flex-direction: column;
 }
 
+/* makes the buttons into a navbar */
+.buttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #060000;
+  position: sticky;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+/* displays the images in left to right order */
+.Abt-me-imgs {
+display: flex;
+}
+
+.blank {
+    flex: 35px;
+    padding: 5px;
+}
+.section-1-resume {
+list-style-type: circle;
+
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
