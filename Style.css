@@ -1,6 +1,8 @@
 /*changes the background color and text color*/
 body {
-background-color: black;
+text-align: center;
+background-image: url("https://www.bing.com/th/id/OGC.b058db7598b4807c3a24684bdddde06e?pid=1.7&rurl=https%3a%2f%2fi.pinimg.com%2foriginals%2f10%2fea%2f49%2f10ea49a7218d7a9ddfeec8c6b1217891.gif&ehk=suXb6nNvX7khtYTk%2bl1ttxUOspFmvGXsxp4fGmI9IQU%3d");
+background-size: cover;
 color: #FBFF00;
 }
 
@@ -10,64 +12,246 @@ color: #FBFF00;
 
 }
 
-/* makes the buttons into a navbar */
+/* makes the buttons allign vertically on all pages */
 .buttons {
+  display: flex;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #060000;
-  position: sticky;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  
+  position: relative;
+  padding-left: 95px;
 }
 
-li {
-  float: left;
+.projects-button {
+  background-color: #FBFF00;
+  border: none;
+  margin: 25px;
+  font-size: large;
+  border-radius: 50%;
+  width: 150px;
+  height: 50px;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.Citations-button {
+  background-color: #FBFF00;
+  border: none;
+  margin: 25px;
+  font-size: large;
+  border-radius: 50%;
+  width: 150px;
+  height: 50px;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
+.settings-button {
+  background-color: #FBFF00;
+  border: none;
+  margin: 25px;
+  font-size: large;
+  border-radius: 50%;
+  width: 150px;
+  height: 50px;
 }
 
-/* displays the images in left to right order */
-.Abt-me-imgs {
-display: flex;
+.home-button {
+  background-color: #FBFF00;
+  border: none;
+  margin: 25px;
+  font-size: large;
+  border-radius: 50%;
+  width: 150px;
+  height: 50px;
 }
 
+.Credits-button {
+  background-color: #FBFF00;
+  border: none;
+  margin: 25px;
+  font-size: large;
+  border-radius: 50%;
+  width: 150px;
+  height: 50px;
+}
+
+/* formats the image on the home page */
+.home-img-1 {
+  float: right;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+
+/* formats the text on the home page */
 .blank {
     flex: 35px;
     padding: 5px;
 }
-.section-1-resume {
-list-style-type: circle;
 
-}
-.dropdown {
-  position: relative;
-  display: inline-block;
+.resume-skills {
+
+  color: rgb(255, 255, 255);
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
+.experiences {
+  color: rgb(255, 255, 255);
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.resume-edu {
+  color: rgb(255, 255, 255);
+}
+
+.exp-header {
+  text-align: left;
+  margin: 40px;
+}
+.skills-header {
+  text-align: left;
+  margin: 40px;
+}
+
+.edu-header {
+  text-align: left;
+  margin: 40px;
+}
+
+
+.exp-1 {
+text-align: left;
+margin-left: 100px;
+}
+
+.exp-2 {
+text-align: left;
+margin-left: 100px;
+}
+
+.exp-3 {
+text-align: left;
+margin-left: 100px;
+}
+
+.skill-1 {
+  text-align: left;
+  margin-left: 100px;
+}
+
+.skill-2 {
+  text-align: left;
+  margin-left: 100px;
+}
+
+.skill-3 {
+  text-align: left;
+  margin-left: 100px;
+}
+
+.edu-1 {
+  text-align: left;
+  margin-left: 100px;
+}
+
+.edu-2 {
+  text-align: left;
+  margin-left: 100px;
+}
+
+.edu-3 {
+  text-align: left;
+  margin-left: 100px;
+}
+
+.Resume-name {
+  text-align: left;
+}
+
+.resume-email {
+  text-align: left;
+}
+
+/*Divide the explanations into sections*/
+.project-explanations {
+display: flex;
+list-style-type: none;
+
+}
+
+/* aligns the text*/
+.project-1 {
+  text-align: left;
+  padding: 100px;
+}
+
+.project-2 {
+ text-align: center;
+ padding: 100px;
+}
+.project-3 {
+  text-align: right;
+  padding: 100px;
+}
+
+/* aligns and spaces out images on the projects page*/
+.proj-img-1 {
+  width: 350px;
+  margin-right: 80px;
+}
+
+.proj-img-2 {
+  width: 350px;
+}
+
+.proj-img-3 {
+  width: 250px;
+  margin-left: 100px;
+}
+
+.project-photos {
+  display: flex;
+}
+
+/* aligns text to the left of the screen */
+.contact {
+  text-align: start;
+}
+
+/* adds a border under the welcome */
+.animate-charcter {
+  border-bottom: 2px solid #ff8800;
+}
+
+
+/* aligns text to the left of the screen */
+.Links {
+  text-align: left;
+}
+
+
+/* formats the about me page */
+.ab-1 {
+margin-bottom: 100px;
+text-align: left;
+}
+
+.ab-2 {
+  text-align: left;
+}
+
+.ab-3 {
+  margin-top: 100px;
+  text-align: left;
+}
+
+.AbMeImgs {
+  list-style-type: none;
+  display: flex;
+}
+
+.abImg-1 {
+margin: 100px;
+}
+
+.abImg-2 {
+margin: 100px;
+}
+
+.abImg-3 {
+margin: 100px;
 }
